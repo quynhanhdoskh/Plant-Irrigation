@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introduction">
+
+    <ImageView
+        android:id="@+id/nen"
+        android:layout_width="wrap_content"
+        android:layout_height="735dp"
+        android:src="@drawable/dt"
+        app:layout_constraintVertical_bias="0"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintVertical_bias=".08"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tenApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Greenie Watering"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automatic"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="66sp"
+        android:layout_marginTop="370dp"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tenApp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watering"
+        android:textColor="#D0FFFFFF"
+        android:textStyle="normal"
+        android:textSize="33sp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintHorizontal_bias=".2"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="due to"
+        android:textColor="#D0FFFFFF"
+        android:textStyle="normal"
+        android:textSize="28sp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintHorizontal_bias=".32"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        android:textSize="70sp"
+        android:layout_marginTop="360dp"
+        app:layout_constraintHorizontal_bias=".8"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"/>
+
+    <!--TextView
+        android:id="@+id/text5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Automatic watering system"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        android:textSize="19sp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias=".55"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text4"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="based on preset time"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        android:textSize="19sp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias=".55"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text5"/>
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="help you water remotely"
+        android:textColor="#FFFFFF"
+        android:textStyle="normal"
+        android:textSize="19sp"
+        android:layout_marginTop="505dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintHorizontal_bias=".55"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text6"/-->
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent=".8"
+        app:layout_constraintVertical_bias=".85"
+        android:text="Continue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright 2023"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cont"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
